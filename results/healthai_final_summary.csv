@@ -1,0 +1,7 @@
+Experiment,Primary Equity Result,Status
+Baseline Audit,35.3 pp max racial/ethnic FNR gap,BASELINE DISPARITY
+Crash 1: Poverty Missingness,+2.7 pp lower-income FNR change,NO MATERIAL ADDITIONAL DEGRADATION
+Crash 2: Underrepresentation,+0.0 pp NH Asian FNR change,NO MATERIAL ADDITIONAL DEGRADATION
+Crash 3: Measurement Error,+2.0 pp largest subgroup FNR change,NO MATERIAL ADDITIONAL DEGRADATION
+Crash 4: Population Shift,+0.4 pp deployment FNR change,NO MATERIAL ADDITIONAL DEGRADATION
+Crash 5: Systematic Label Bias,+56.8 pp lower-income FNR change,EQUITY FAILURE
