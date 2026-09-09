@@ -538,3 +538,117 @@ HealthAI-StressTest/
     ├── healthai_final_summary.csv
     ├── healthai_baseline_equity_audit.csv
     └── healthai_label_bias_results.csv
+```
+
+---
+
+# Tools
+
+- Python
+- pandas
+- NumPy
+- scikit-learn
+- Matplotlib
+- Google Colab
+- MEPS survey data
+
+---
+
+# Skills Demonstrated
+
+This project demonstrates experience with:
+
+- healthcare analytics
+- predictive modeling
+- logistic regression
+- responsible AI
+- algorithmic fairness
+- health equity analysis
+- model evaluation
+- subgroup performance auditing
+- robustness testing
+- simulation experiments
+- survey-weighted healthcare data
+- feature preprocessing
+- missing-data handling
+- population shift analysis
+- data visualization
+- reproducible research
+
+---
+
+# Limitations
+
+This project is an exploratory portfolio analysis rather than a validated clinical prediction model.
+
+Important limitations include:
+
+- The analysis uses one year of MEPS data.
+- The outcome and predictors are measured within the same year.
+- The model therefore represents concurrent risk classification rather than prospective prediction.
+- Some racial/ethnic subgroup test samples were relatively small.
+- The baseline model uses a limited predictor set.
+- Logistic regression was used rather than comparing multiple machine-learning architectures.
+- Race/ethnicity was excluded from the predictive model by design; alternative fairness-aware modeling strategies were not evaluated.
+- The 10-percentage-point equity-warning threshold is a **project-defined exploratory threshold**, not an established clinical fairness standard.
+- The mean predicted-versus-observed risk gap used here is a simplified calibration summary and is not a complete calibration analysis.
+- Artificial stress tests approximate possible data failures and should not be interpreted as estimates of the actual prevalence of these errors in healthcare systems.
+- The population-shift experiment represents one specific insurance-based shift and does not capture all forms of dataset or deployment shift.
+- Results should not be generalized to healthcare AI systems beyond this experimental setting.
+
+---
+
+# Potential Extensions
+
+Future versions of HealthAI StressTest could include:
+
+- XGBoost
+- random forest models
+- comparison across multiple model architectures
+- calibration curves
+- calibration intercept and slope
+- confidence intervals for subgroup metrics
+- bootstrap uncertainty estimation
+- intersectional subgroup analysis
+- additional healthcare outcomes
+- temporal validation
+- external validation
+- fairness-aware model mitigation techniques
+- automated stress-test configuration
+- interactive Streamlit dashboard
+- downloadable model equity reports
+
+A future HealthAI StressTest application could allow users to:
+
+1. Upload a healthcare dataset
+2. Select an outcome
+3. Select demographic or protected groups
+4. Choose stress-test scenarios
+5. Set degradation levels
+6. Automatically calculate subgroup performance
+7. Compare aggregate and subgroup metrics
+8. Identify potential equity-failure thresholds
+9. Generate visual stress-test reports
+10. Export an automated model equity audit
+
+---
+
+# Project Takeaway
+
+> **A healthcare prediction model does not have to fail overall to fail a population.**
+
+HealthAI StressTest demonstrates why healthcare model evaluation should examine not only average predictive performance, but also how failures in data quality affect specific populations.
+
+In this experiment, systematic label bias created severe socioeconomic disparities long before aggregate model performance appeared catastrophic.
+
+The results highlight a broader principle for responsible healthcare AI:
+
+> **Model performance should be stress-tested across populations, not judged solely by a single overall accuracy metric.**
+
+---
+
+# Author
+
+**Chloe Sequeira, MPH**
+
+Epidemiology | Healthcare Analytics | Health Equity | Data Science
