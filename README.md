@@ -30,6 +30,8 @@ When high healthcare expenditures among lower-income adults were increasingly mi
 
 This demonstrates how **aggregate performance metrics can conceal substantial subgroup harm**.
 
+
+
 ![Systematic Label Bias Equity Failure](figures/healthai_label_bias_equity_failure.png)
 
 ---
@@ -468,3 +470,93 @@ HealthAI-StressTest/
     ├── healthai_final_summary.csv
     ├── healthai_baseline_equity_audit.csv
     └── healthai_label_bias_results.csv
+
+## Tools
+
+- Python
+- pandas
+- NumPy
+- scikit-learn
+- Matplotlib
+- Google Colab
+- MEPS survey data
+
+---
+
+## Skills Demonstrated
+
+This project demonstrates experience with:
+
+- healthcare analytics
+- predictive modeling
+- logistic regression
+- responsible AI
+- algorithmic fairness
+- health equity analysis
+- model evaluation
+- subgroup performance auditing
+- robustness testing
+- simulation experiments
+- survey-weighted healthcare data
+- feature preprocessing
+- missing-data handling
+- population shift analysis
+- data visualization
+- reproducible research
+
+---
+
+## Limitations
+
+This project is an exploratory portfolio analysis rather than a validated clinical prediction model.
+
+Important limitations include:
+
+- The analysis uses one year of MEPS data.
+- The outcome and predictors are measured within the same year.
+- Some racial/ethnic subgroup test samples were relatively small.
+- The baseline model uses a limited predictor set.
+- Logistic regression was used rather than comparing multiple machine-learning architectures.
+- The 10-percentage-point equity-warning threshold is a **project-defined exploratory threshold**, not an established clinical fairness standard.
+- The calibration-gap measure used here summarizes mean predicted versus observed risk and is not a complete calibration analysis.
+- Artificial stress tests approximate possible data failures and should not be interpreted as estimates of the prevalence of these errors in real healthcare systems.
+- Results should not be generalized to healthcare AI systems beyond this experimental setting.
+
+---
+
+## Potential Extensions
+
+Future versions of HealthAI StressTest could include:
+
+- XGBoost and random forest models
+- calibration curves and calibration slope/intercept
+- confidence intervals for subgroup performance
+- bootstrap uncertainty estimation
+- intersectional subgroup analysis
+- additional healthcare outcomes
+- temporal validation
+- external validation
+- automated stress-test configuration
+- interactive Streamlit dashboard
+- downloadable model equity reports
+
+A future application could allow users to:
+
+1. Upload a healthcare dataset
+2. Select an outcome
+3. Select demographic or protected groups
+4. Choose stress-test scenarios
+5. Set degradation levels
+6. Automatically calculate subgroup performance
+7. Identify potential equity-failure thresholds
+8. Export an equity audit report
+
+---
+
+## Project Takeaway
+
+> **A healthcare prediction model does not have to fail overall to fail a population.**
+
+HealthAI StressTest demonstrates why healthcare model evaluation should examine not only average predictive performance, but also how data quality failures affect specific populations.
+
+In this experiment, systematic label bias created severe socioeconomic disparities long before aggregate model performance appeared catastrophic.
